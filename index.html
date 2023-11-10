@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+        /* Resetting default margin and padding for better styling */
+        body, h1, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Adding a bit of style to make it visually appealing */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Creating a flex container */
+        .flex-container {
+            display: flex;
+            border: 2px solid #333;
+            padding: 20px;
+        }
+
+        /* Creating flex items inside the flex container */
+        .flex-item {
+            /* Basic styling for demonstration purposes */
+            border: 1px solid #777;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            flex: 1; /* This property makes the items flexible and take up equal space */
+        }
+
+        /* Adding responsive styling for smaller screens */
+        @media (max-width: 600px) {
+            .flex-container {
+                flex-direction: column; /* Stack items vertically on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Tutorial</h1>
+
+    <!-- Creating a simple menu for demonstration -->
+    <div class="flex-container">
+        <!-- Flex items representing menu items -->
+        <div class="flex-item">Home</div>
+        <div class="flex-item">About</div>
+        <div class="flex-item">Services</div>
+        <div class="flex-item">Contact</div>
+    </div>
+
+    <p>This is a simple demonstration of CSS Flexbox. Resize the window to see the responsiveness.</p>
+</body>
+</html>
